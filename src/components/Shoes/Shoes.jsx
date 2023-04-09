@@ -1,4 +1,5 @@
 import React from 'react';
+import Shoe from '../Shoe/Shoe';
 
 const Shoes = (props) => {
 
@@ -6,7 +7,11 @@ const Shoes = (props) => {
         <main>
             <section className="shoe-wrapper">
                 {props.items.map(shoe => (
-                    <h3>{shoe.style}</h3>
+                    <Shoe
+                        style={shoe.style}
+                        img={shoe.img}
+                        price={shoe.price}
+                    />
                 ))}
             </section>
             <section className="cart-wrapper">
