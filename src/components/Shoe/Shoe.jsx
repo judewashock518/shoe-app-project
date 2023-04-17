@@ -5,9 +5,9 @@ const Shoe = (props) => {
 
     return(
         <div className= "wrapper">
+            <img src={props.img} alt={props.style} />
             <h3>{props.style}</h3>
             <p>${props.price}</p>
-            <img src={props.img} alt={props.style} />
             <button>Add To Cart</button>
         </div>
     )

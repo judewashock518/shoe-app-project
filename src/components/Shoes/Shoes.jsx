@@ -6,9 +6,9 @@ const Shoes = (props) => {
 
     return (
         <main>
-            <div className="cart-wrapper">
+            {/* <div className="cart-wrapper">
                 <h3>Cart Total: $</h3>
-            </div>
+            </div> */}
             <section className="container">
                 {props.items.map(shoe => (
                     <Shoe
