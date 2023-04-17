@@ -1,11 +1,15 @@
 import React from 'react';
 import Shoe from '../Shoe/Shoe';
+import './Shoes.css';
 
 const Shoes = (props) => {
 
     return (
         <main>
-            <section className="shoe-wrapper">
+            <div className="cart-wrapper">
+                <h3>Cart Total: $</h3>
+            </div>
+            <section className="container">
                 {props.items.map(shoe => (
                     <Shoe
                         style={shoe.style}
@@ -13,9 +17,6 @@ const Shoes = (props) => {
                         price={shoe.price}
                     />
                 ))}
-            </section>
-            <section className="cart-wrapper">
-                <h3>Cart Total: $</h3>
             </section>
         </main>
     )

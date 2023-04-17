@@ -1,12 +1,14 @@
 import React from 'react';
+import './Shoe.css';
 
 const Shoe = (props) => {
 
     return(
-        <div>
+        <div className= "wrapper">
             <h3>{props.style}</h3>
+            <p>${props.price}</p>
             <img src={props.img} alt={props.style} />
-            <button>{props.price}</button>
+            <button>Add To Cart</button>
         </div>
     )
 }
